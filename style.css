@@ -1,0 +1,218 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Main container */
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: #000709;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+/* Logo */
+.icon {
+    width: 180px;
+}
+
+.logo {
+    font-size: 32px;
+    color: brown;
+    text-transform: lowercase;
+}
+
+/* Menu */
+.menu {
+    flex: 1;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: rgb(241, 240, 251);
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.menu ul li a:hover {
+    background-color: #555;
+    color: rgb(232, 235, 239);
+}
+
+/* Search */
+.search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search input {
+    width: 150px;
+    height: 35px;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+.search button {
+    height: 35px;
+    padding: 0 15px;
+    border: none;
+    background-color: rgb(42, 75, 165);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search button:hover {
+    background-color: #02008b;
+}
+
+.slider {
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+     .slides {
+         display: flex; width: 300%;
+         height: 100%;
+        animation: slide 9s infinite; 
+    
+    } 
+        
+.slides img { 
+    width: 33.333%;
+     height: 100%;
+    object-fit: cover; 
+
+} 
+    
+@keyframes slide {
+    0%, 30% {
+        transform: translateX(0);
+    }
+    35%, 65% {
+        transform: translateX(-33.333%);
+    }
+    70%, 95% {
+        transform: translateX(-66.666%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Text on banner */
+.banner-text {
+    position: absolute;
+    z-index: 10;
+
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+
+    width: 500px;
+    color: #141620;
+}
+
+/* Heading */
+.banner-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* Paragraph */
+.banner-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Button */
+.banner-text button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(42, 71, 165);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+
+    
+.slider::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 5;
+}
+.banner {
+    height: 500px;
+    background-image: url("mountain.jpg");
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.banner-text {
+    text-align: left;
+    margin-left: 80px;
+    color: white;
+}
+
+.card {
+    width: 18rem;
+    text-align: left;
+}
+
+.card-img-top {
+    width: 100%;
+    display: block;
+}
+
+.card-text {
+    text-align: left;
+    padding: 15px;
+    line-height: 1.6;
+}
+}
